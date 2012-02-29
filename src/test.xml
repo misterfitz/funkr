@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<JamBase_Data>
+	<Results_Title>Boston, MA | 1/20/2012 - 1/21/2012</Results_Title>
+	<event>
+		<event_id>1553832</event_id>
+		<artists>
+			<artist>
+				<artist_id>20656</artist_id>
+				<artist_name>Flat Nose Diesel Bus</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>45608</venue_id>
+			<venue_name>Daniel Packer Inn</venue_name>
+			<venue_city>Mystic</venue_city>
+			<venue_state>CT</venue_state>
+			<venue_zip>06355</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1553832
+		</event_url>
+	</event>
+	<event>
+		<event_id>1570543</event_id>
+		<artists>
+			<artist>
+				<artist_id>60109</artist_id>
+				<artist_name>Chris Castle</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>114103</venue_id>
+			<venue_name>Hanafin's Irish Pub</venue_name>
+			<venue_city>New London</venue_city>
+			<venue_state>CT</venue_state>
+			<venue_zip>06320</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1570543
+		</event_url>
+	</event>
+	<event>
+		<event_id>1587268</event_id>
+		<artists>
+			<artist>
+				<artist_id>8535</artist_id>
+				<artist_name>Matt Nathanson</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>91690</venue_id>
+			<venue_name>Wolf Den</venue_name>
+			<venue_city>Uncasville</venue_city>
+			<venue_state>CT</venue_state>
+			<venue_zip>06382</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1587268
+		</event_url>
+	</event>
+	<event>
+		<event_id>1614160</event_id>
+		<artists>
+			<artist>
+				<artist_id>41422</artist_id>
+				<artist_name>Hoodoo Revelator</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>15208</venue_id>
+			<venue_name>The Pickled Onion</venue_name>
+			<venue_city>Beverly</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01915</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1614160
+		</event_url>
+	</event>
+	<event>
+		<event_id>1580839</event_id>
+		<artists>
+			<artist>
+				<artist_id>32382</artist_id>
+				<artist_name>Paid in Spades</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>9980</venue_id>
+			<venue_name>Hard Rock Cafe</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02109</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1580839
+		</event_url>
+	</event>
+	<event>
+		<event_id>1586754</event_id>
+		<artists>
+			<artist>
+				<artist_id>81970</artist_id>
+				<artist_name>Joe Bachman &amp; the Crew</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>5484</venue_id>
+			<venue_name>The Harp</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02108</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1586754
+		</event_url>
+	</event>
+	<event>
+		<event_id>1613102</event_id>
+		<artists>
+			<artist>
+				<artist_id>72024</artist_id>
+				<artist_name>Funkin' A</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>102518</venue_id>
+			<venue_name>Liberty Hotel</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02114</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1613102
+		</event_url>
+	</event>
+	<event>
+		<event_id>1613241</event_id>
+		<artists>
+			<artist>
+				<artist_id>63844</artist_id>
+				<artist_name>All of the Animals</artist_name>
+			</artist>
+			<artist>
+				<artist_id>26373</artist_id>
+				<artist_name>The Highway</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>71443</venue_id>
+			<venue_name>Copperfield's</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02215</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1613241
+		</event_url>
+	</event>
+	<event>
+		<event_id>1607234</event_id>
+		<artists>
+			<artist>
+				<artist_id>37975</artist_id>
+				<artist_name>Kevin Gordon</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>6118</venue_id>
+			<venue_name>Toad</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02140</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1607234
+		</event_url>
+	</event>
+	<event>
+		<event_id>1608997</event_id>
+		<artists>
+			<artist>
+				<artist_id>37607</artist_id>
+				<artist_name>Shawn Johnson and the Foundation</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>58155</venue_id>
+			<venue_name>Out of the Blue Art Gallery</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02139</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1608997
+		</event_url>
+	</event>
+	<event>
+		<event_id>1615034</event_id>
+		<artists>
+			<artist>
+				<artist_id>76002</artist_id>
+				<artist_name>BOOMBASNAP</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>92864</venue_id>
+			<venue_name>Rum Runner's</venue_name>
+			<venue_city>Dennisport</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02639</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1615034
+		</event_url>
+	</event>
+	<event>
+		<event_id>1608993</event_id>
+		<artists>
+			<artist>
+				<artist_id>67533</artist_id>
+				<artist_name>Rupert Wates</artist_name>
+			</artist>
+			<artist>
+				<artist_id>53731</artist_id>
+				<artist_name>Valorie Miller</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>118835</venue_id>
+			<venue_name>Cafe Verde</venue_name>
+			<venue_city>Lawrence</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01840</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1608993
+		</event_url>
+	</event>
+	<event>
+		<event_id>1591967</event_id>
+		<artists>
+			<artist>
+				<artist_id>13137</artist_id>
+				<artist_name>Paranoid Social Club</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>89175</venue_id>
+			<venue_name>Gemstones</venue_name>
+			<venue_city>Lowell</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01852</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1591967
+		</event_url>
+	</event>
+	<event>
+		<event_id>1571917</event_id>
+		<artists>
+			<artist>
+				<artist_id>59479</artist_id>
+				<artist_name>Mike Maven And The Goodlife</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>103705</venue_id>
+			<venue_name>Absolutely Fabulous</venue_name>
+			<venue_city>Melrose </venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02176</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1571917
+		</event_url>
+	</event>
+	<event>
+		<event_id>1593201</event_id>
+		<artists>
+			<artist>
+				<artist_id>10479</artist_id>
+				<artist_name>Vintage Soul</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>125952</venue_id>
+			<venue_name>Candleworks Restaurant </venue_name>
+			<venue_city>New Bedford</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02740</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1593201
+		</event_url>
+	</event>
+	<event>
+		<event_id>1583679</event_id>
+		<artists>
+			<artist>
+				<artist_id>88014</artist_id>
+				<artist_name>Gumbo Diablo</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>113803</venue_id>
+			<venue_name>Mari's Place</venue_name>
+			<venue_city>Quincy</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02169</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1583679
+		</event_url>
+	</event>
+	<event>
+		<event_id>1585774</event_id>
+		<artists>
+			<artist>
+				<artist_id>71296</artist_id>
+				<artist_name>Amber Spyglass</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>78712</venue_id>
+			<venue_name>Gulu-Gulu Cafe</venue_name>
+			<venue_city>Salem</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01970</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1585774
+		</event_url>
+	</event>
+	<event>
+		<event_id>1611932</event_id>
+		<artists>
+			<artist>
+				<artist_id>44293</artist_id>
+				<artist_name>James Montgomery</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>4733</venue_id>
+			<venue_name>Johnny D's</venue_name>
+			<venue_city>Somerville</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02143</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1611932
+		</event_url>
+	</event>
+	<event>
+		<event_id>1612924</event_id>
+		<artists>
+			<artist>
+				<artist_id>86171</artist_id>
+				<artist_name>Doug Ratner &amp; The Watchmen</artist_name>
+			</artist>
+			<artist>
+				<artist_id>62300</artist_id>
+				<artist_name>Of the Earth</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>57786</venue_id>
+			<venue_name>Shenanigan's</venue_name>
+			<venue_city>South Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02127</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1612924
+		</event_url>
+	</event>
+	<event>
+		<event_id>1598184</event_id>
+		<artists>
+			<artist>
+				<artist_id>10219</artist_id>
+				<artist_name>Funkatronic</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>72994</venue_id>
+			<venue_name>Crotched Mountain</venue_name>
+			<venue_city>Bennington</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03442</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1598184
+		</event_url>
+	</event>
+	<event>
+		<event_id>1577365</event_id>
+		<artists>
+			<artist>
+				<artist_id>89991</artist_id>
+				<artist_name>Spiral Circus</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>23892</venue_id>
+			<venue_name>Whippersnappers</venue_name>
+			<venue_city>Londonderry</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03053</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1577365
+		</event_url>
+	</event>
+	<event>
+		<event_id>1591953</event_id>
+		<artists>
+			<artist>
+				<artist_id>3041</artist_id>
+				<artist_name>Country Joe McDonald</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>24017</venue_id>
+			<venue_name>Homestead</venue_name>
+			<venue_city>Londonderry</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03053</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1591953
+		</event_url>
+	</event>
+	<event>
+		<event_id>1607225</event_id>
+		<artists>
+			<artist>
+				<artist_id>77925</artist_id>
+				<artist_name>Jah-N-I Roots Band</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>24105</venue_id>
+			<venue_name>Pasta Loft/Brickhouse</venue_name>
+			<venue_city>Milford</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03055</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1607225
+		</event_url>
+	</event>
+	<event>
+		<event_id>1591948</event_id>
+		<artists>
+			<artist>
+				<artist_id>21142</artist_id>
+				<artist_name>Hot Day at the Zoo</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>19874</venue_id>
+			<venue_name>Harlow's Pub</venue_name>
+			<venue_city>Peterborough</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03458</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1591948
+		</event_url>
+	</event>
+	<event>
+		<event_id>1609010</event_id>
+		<artists>
+			<artist>
+				<artist_id>35050</artist_id>
+				<artist_name>Sweet River Monkey Bender and the Iridescent Tones
+				</artist_name>
+			</artist>
+			<artist>
+				<artist_id>43143</artist_id>
+				<artist_name>Mel Gibson and the Pants</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>38916</venue_id>
+			<venue_name>The Sad Cafe</venue_name>
+			<venue_city>Plaistow</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03865</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1609010
+		</event_url>
+	</event>
+	<event>
+		<event_id>1609012</event_id>
+		<artists>
+			<artist>
+				<artist_id>88891</artist_id>
+				<artist_name>Roz Raskin &amp; The Rice Cakes</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>1788</venue_id>
+			<venue_name>Met Cafe</venue_name>
+			<venue_city>Pawtucket</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02860</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1609012
+		</event_url>
+	</event>
+	<event>
+		<event_id>1600826</event_id>
+		<artists>
+			<artist>
+				<artist_id>87583</artist_id>
+				<artist_name>Inevitable thought</artist_name>
+			</artist>
+			<artist>
+				<artist_id>74831</artist_id>
+				<artist_name>Eric Stepanian</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>123735</venue_id>
+			<venue_name>The News Cafe</venue_name>
+			<venue_city>Pawtucket, RI</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02860</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1600826
+		</event_url>
+	</event>
+	<event>
+		<event_id>1593999</event_id>
+		<artists>
+			<artist>
+				<artist_id>88757</artist_id>
+				<artist_name>Normal Instruments</artist_name>
+			</artist>
+			<artist>
+				<artist_id>77572</artist_id>
+				<artist_name>Viral Sound</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>113105</venue_id>
+			<venue_name>The Spot Underground</venue_name>
+			<venue_city>Providence</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02903</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1593999
+		</event_url>
+	</event>
+	<event>
+		<event_id>1617548</event_id>
+		<artists>
+			<artist>
+				<artist_id>11287</artist_id>
+				<artist_name>John Medeski</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>125694</venue_id>
+			<venue_name>Fete Lounge</venue_name>
+			<venue_city>Providence</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02909</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1617548
+		</event_url>
+	</event>
+	<event>
+		<event_id>1613514</event_id>
+		<artists>
+			<artist>
+				<artist_id>80085</artist_id>
+				<artist_name>Steve Carter</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>23343</venue_id>
+			<venue_name>Jonathan's</venue_name>
+			<venue_city>Ogunquit</venue_city>
+			<venue_state>ME</venue_state>
+			<venue_zip>03907</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1613514
+		</event_url>
+	</event>
+	<event>
+		<event_id>1585137</event_id>
+		<artists>
+			<artist>
+				<artist_id>37128</artist_id>
+				<artist_name>Jen Kearney &amp; the Lost Onion</artist_name>
+			</artist>
+			<artist>
+				<artist_id>13035</artist_id>
+				<artist_name>Jen Kearney</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>36432</venue_id>
+			<venue_name>The Space</venue_name>
+			<venue_city>Nantucket</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02554</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1585137
+		</event_url>
+	</event>
+	<event>
+		<event_id>1539879</event_id>
+		<artists>
+			<artist>
+				<artist_id>26068</artist_id>
+				<artist_name>The Trews</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>124168</venue_id>
+			<venue_name>Fete Ballroom</venue_name>
+			<venue_city>Providence</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02909</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1539879
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1539879
+		</event_url>
+	</event>
+	<event>
+		<event_id>1585504</event_id>
+		<artists>
+			<artist>
+				<artist_id>67917</artist_id>
+				<artist_name>The Organic Sound Project</artist_name>
+			</artist>
+			<artist>
+				<artist_id>80237</artist_id>
+				<artist_name>Flabberghaster</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>70410</venue_id>
+			<venue_name>Church</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02215</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1585504
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1585504
+		</event_url>
+	</event>
+	<event>
+		<event_id>1565033</event_id>
+		<artists>
+			<artist>
+				<artist_id>38954</artist_id>
+				<artist_name>Ghost</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>39581</venue_id>
+			<venue_name>Middle East Downstairs</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02139</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1565033
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1565033
+		</event_url>
+	</event>
+	<event>
+		<event_id>1572616</event_id>
+		<artists>
+			<artist>
+				<artist_id>13195</artist_id>
+				<artist_name>Greensky Bluegrass</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>38962</venue_id>
+			<venue_name>Middle East Upstairs</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02139</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1572616
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1572616
+		</event_url>
+	</event>
+	<event>
+		<event_id>1574896</event_id>
+		<artists>
+			<artist>
+				<artist_id>20989</artist_id>
+				<artist_name>Adam Ezra Group</artist_name>
+			</artist>
+			<artist>
+				<artist_id>68378</artist_id>
+				<artist_name>John Colvert</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>9487</venue_id>
+			<venue_name>Club Passim</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02138</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1574896
+		</event_url>
+	</event>
+	<event>
+		<event_id>1608152</event_id>
+		<artists>
+			<artist>
+				<artist_id>4876</artist_id>
+				<artist_name>Boston Horns</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>19677</venue_id>
+			<venue_name>Ryles Jazz Club</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02139</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1608152
+		</event_url>
+	</event>
+	<event>
+		<event_id>1483592</event_id>
+		<artists>
+			<artist>
+				<artist_id>25874</artist_id>
+				<artist_name>Jeffrey Foucault</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>120050</venue_id>
+			<venue_name>Me &amp; Thee Coffeehouse</venue_name>
+			<venue_city>Marblehead</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01945</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1483592
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1483592
+		</event_url>
+	</event>
+	<event>
+		<event_id>1606275</event_id>
+		<artists>
+			<artist>
+				<artist_id>75176</artist_id>
+				<artist_name>Ground Zero House Band</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>82316</venue_id>
+			<venue_name>Ground Zero</venue_name>
+			<venue_city>Suncook</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03275</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1606275
+		</event_url>
+	</event>
+	<event>
+		<event_id>1600032</event_id>
+		<artists>
+			<artist>
+				<artist_id>75654</artist_id>
+				<artist_name>Yoko Miwa Trio</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>20997</venue_id>
+			<venue_name>Les Zygomates</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02111</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1600032
+		</event_url>
+	</event>
+	<event>
+		<event_id>1610506</event_id>
+		<artists>
+			<artist>
+				<artist_id>5373</artist_id>
+				<artist_name>Club d'Elf</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>2171</venue_id>
+			<venue_name>Lizard Lounge</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02138</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1610506
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1610506
+		</event_url>
+	</event>
+	<event>
+		<event_id>1562081</event_id>
+		<artists>
+			<artist>
+				<artist_id>25315</artist_id>
+				<artist_name>Mission of Burma</artist_name>
+			</artist>
+			<artist>
+				<artist_id>82366</artist_id>
+				<artist_name>Viva Viva</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>116755</venue_id>
+			<venue_name>Brighton Music Hall</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02134</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1562081
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1562081
+		</event_url>
+	</event>
+	<event>
+		<event_id>1606874</event_id>
+		<artists>
+			<artist>
+				<artist_id>75829</artist_id>
+				<artist_name>Axwell</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>3974</venue_id>
+			<venue_name>Royale Boston</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02108</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1606874
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1606874
+		</event_url>
+	</event>
+	<event>
+		<event_id>1618219</event_id>
+		<artists>
+			<artist>
+				<artist_id>74981</artist_id>
+				<artist_name>Big Jon Short</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>100844</venue_id>
+			<venue_name>The Dive Bar</venue_name>
+			<venue_city>Worcester</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01610</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1618219
+		</event_url>
+	</event>
+	<event>
+		<event_id>1584114</event_id>
+		<artists>
+			<artist>
+				<artist_id>18761</artist_id>
+				<artist_name>Triad</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/20/2012</event_date>
+		<venue>
+			<venue_id>115863</venue_id>
+			<venue_name>Newport Grand Cocktail Lounge</venue_name>
+			<venue_city>Newport</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02840</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1584114
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1584114
+		</event_url>
+	</event>
+	<event>
+		<event_id>1611656</event_id>
+		<artists>
+			<artist>
+				<artist_id>9619</artist_id>
+				<artist_name>HannaH*s Field</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>69572</venue_id>
+			<venue_name>Bean &amp; Leaf</venue_name>
+			<venue_city>New London</venue_city>
+			<venue_state>CT</venue_state>
+			<venue_zip>06320</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1611656
+		</event_url>
+	</event>
+	<event>
+		<event_id>1586755</event_id>
+		<artists>
+			<artist>
+				<artist_id>81970</artist_id>
+				<artist_name>Joe Bachman &amp; the Crew</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>5484</venue_id>
+			<venue_name>The Harp</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02108</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1586755
+		</event_url>
+	</event>
+	<event>
+		<event_id>1616709</event_id>
+		<artists>
+			<artist>
+				<artist_id>83611</artist_id>
+				<artist_name>Tom Burgess</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>117148</venue_id>
+			<venue_name>Sweetwater Tavern</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02116</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1616709
+		</event_url>
+	</event>
+	<event>
+		<event_id>1614922</event_id>
+		<artists>
+			<artist>
+				<artist_id>49660</artist_id>
+				<artist_name>Planetoid</artist_name>
+			</artist>
+			<artist>
+				<artist_id>76429</artist_id>
+				<artist_name>THE FORCE</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>122247</venue_id>
+			<venue_name>The Magic Room Gallery</venue_name>
+			<venue_city>Brighton</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02135</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1614922
+		</event_url>
+	</event>
+	<event>
+		<event_id>1605736</event_id>
+		<artists>
+			<artist>
+				<artist_id>77032</artist_id>
+				<artist_name>F.A.M.E.</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>39581</venue_id>
+			<venue_name>Middle East Downstairs</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02139</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1605736
+		</event_url>
+	</event>
+	<event>
+		<event_id>1616944</event_id>
+		<artists>
+			<artist>
+				<artist_id>36787</artist_id>
+				<artist_name>Kathy Mattea</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>646</venue_id>
+			<venue_name>Sanders Theater</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02138</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1616944
+		</event_url>
+	</event>
+	<event>
+		<event_id>1552217</event_id>
+		<artists>
+			<artist>
+				<artist_id>32801</artist_id>
+				<artist_name>Duke Robillard Band</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>13353</venue_id>
+			<venue_name>Narrows Center For The Arts</venue_name>
+			<venue_city>Fall River</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02720</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1552217
+		</event_url>
+	</event>
+	<event>
+		<event_id>1577898</event_id>
+		<artists>
+			<artist>
+				<artist_id>14915</artist_id>
+				<artist_name>Joe Mack</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>95278</venue_id>
+			<venue_name>Dog Bar</venue_name>
+			<venue_city>Gloucester</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01930</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1577898
+		</event_url>
+	</event>
+	<event>
+		<event_id>1577581</event_id>
+		<artists>
+			<artist>
+				<artist_id>89355</artist_id>
+				<artist_name>The McGunks</artist_name>
+			</artist>
+			<artist>
+				<artist_id>27550</artist_id>
+				<artist_name>Chased and Smashed</artist_name>
+			</artist>
+			<artist>
+				<artist_id>84727</artist_id>
+				<artist_name>The Welch Boys</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>6351</venue_id>
+			<venue_name>Midway Cafe</venue_name>
+			<venue_city>Jamaica Plain</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02130</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1577581
+		</event_url>
+	</event>
+	<event>
+		<event_id>1607279</event_id>
+		<artists>
+			<artist>
+				<artist_id>14523</artist_id>
+				<artist_name>Monkey Knife Fight</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>103049</venue_id>
+			<venue_name>Garcia Brogan's</venue_name>
+			<venue_city>Lowell</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01852</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1607279
+		</event_url>
+	</event>
+	<event>
+		<event_id>1601418</event_id>
+		<artists>
+			<artist>
+				<artist_id>1857</artist_id>
+				<artist_name>Gutbucket</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>89843</venue_id>
+			<venue_name>O'briens</venue_name>
+			<venue_city>Lynn</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01905</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1601418
+		</event_url>
+	</event>
+	<event>
+		<event_id>1593202</event_id>
+		<artists>
+			<artist>
+				<artist_id>10479</artist_id>
+				<artist_name>Vintage Soul</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>125952</venue_id>
+			<venue_name>Candleworks Restaurant </venue_name>
+			<venue_city>New Bedford</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02740</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1593202
+		</event_url>
+	</event>
+	<event>
+		<event_id>1570574</event_id>
+		<artists>
+			<artist>
+				<artist_id>21736</artist_id>
+				<artist_name>Comanchero </artist_name>
+			</artist>
+			<artist>
+				<artist_id>81718</artist_id>
+				<artist_name>DIRIGO the Band: Featuring members of Strangefolk
+				</artist_name>
+			</artist>
+			<artist>
+				<artist_id>67147</artist_id>
+				<artist_name>Quincy Mumford </artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>4733</venue_id>
+			<venue_name>Johnny D's</venue_name>
+			<venue_city>Somerville</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02143</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1570574
+		</event_url>
+	</event>
+	<event>
+		<event_id>1609031</event_id>
+		<artists>
+			<artist>
+				<artist_id>37607</artist_id>
+				<artist_name>Shawn Johnson and the Foundation</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>66334</venue_id>
+			<venue_name>Steve's Backstage Pass</venue_name>
+			<venue_city>Taunton</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02780</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1609031
+		</event_url>
+	</event>
+	<event>
+		<event_id>1609054</event_id>
+		<artists>
+			<artist>
+				<artist_id>52904</artist_id>
+				<artist_name>Tokyo Tramps</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>107161</venue_id>
+			<venue_name>Chili Head BBQ Co.</venue_name>
+			<venue_city>W.Bridgewater</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02379</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1609054
+		</event_url>
+	</event>
+	<event>
+		<event_id>1581254</event_id>
+		<artists>
+			<artist>
+				<artist_id>58610</artist_id>
+				<artist_name>Dead By Wednesday</artist_name>
+			</artist>
+			<artist>
+				<artist_id>78928</artist_id>
+				<artist_name>The Circadian Rhythm Kings</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>117358</venue_id>
+			<venue_name>The Raven</venue_name>
+			<venue_city>Worcester</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01606</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1581254
+		</event_url>
+	</event>
+	<event>
+		<event_id>1575665</event_id>
+		<artists>
+			<artist>
+				<artist_id>88763</artist_id>
+				<artist_name>Blacklight Ruckus</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>68343</venue_id>
+			<venue_name>Blue Mermaid Island Grill</venue_name>
+			<venue_city> Portsmouth</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03801</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1575665
+		</event_url>
+	</event>
+	<event>
+		<event_id>1609056</event_id>
+		<artists>
+			<artist>
+				<artist_id>89721</artist_id>
+				<artist_name>Tristan Omand</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>95679</venue_id>
+			<venue_name>Dover Brickhouse</venue_name>
+			<venue_city>Dover</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03820</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1609056
+		</event_url>
+	</event>
+	<event>
+		<event_id>1578431</event_id>
+		<artists>
+			<artist>
+				<artist_id>10249</artist_id>
+				<artist_name>Ryan Montbleau Band</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>40948</venue_id>
+			<venue_name>Tupelo Music Hall</venue_name>
+			<venue_city>Londonderry</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03053</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1578431
+		</event_url>
+	</event>
+	<event>
+		<event_id>1563796</event_id>
+		<artists>
+			<artist>
+				<artist_id>46052</artist_id>
+				<artist_name>Toolfist </artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>50456</venue_id>
+			<venue_name>The Shaskeen</venue_name>
+			<venue_city>Manchester</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03101</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1563796
+		</event_url>
+	</event>
+	<event>
+		<event_id>1602720</event_id>
+		<artists>
+			<artist>
+				<artist_id>63975</artist_id>
+				<artist_name>Tore Down House</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>114253</venue_id>
+			<venue_name>The Wild Rover Pub</venue_name>
+			<venue_city>Manchester</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03101</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1602720
+		</event_url>
+	</event>
+	<event>
+		<event_id>1601970</event_id>
+		<artists>
+			<artist>
+				<artist_id>91357</artist_id>
+				<artist_name>Bohemian Quartet</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>122609</venue_id>
+			<venue_name>Blackstone River Theatre</venue_name>
+			<venue_city>Cumberland</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02864</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1601970
+		</event_url>
+	</event>
+	<event>
+		<event_id>1607278</event_id>
+		<artists>
+			<artist>
+				<artist_id>73979</artist_id>
+				<artist_name>Moga</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>32904</venue_id>
+			<venue_name>Billy Goode's</venue_name>
+			<venue_city>New Port</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02840</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1607278
+		</event_url>
+	</event>
+	<event>
+		<event_id>1577669</event_id>
+		<artists>
+			<artist>
+				<artist_id>46094</artist_id>
+				<artist_name>The Waffle Stompers</artist_name>
+			</artist>
+			<artist>
+				<artist_id>70413</artist_id>
+				<artist_name>BRUNT OF IT</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>123735</venue_id>
+			<venue_name>The News Cafe</venue_name>
+			<venue_city>Pawtucket, RI</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02860</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1577669
+		</event_url>
+	</event>
+	<event>
+		<event_id>1599664</event_id>
+		<artists>
+			<artist>
+				<artist_id>80085</artist_id>
+				<artist_name>Steve Carter</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>23343</venue_id>
+			<venue_name>Jonathan's</venue_name>
+			<venue_city>Ogunquit</venue_city>
+			<venue_state>ME</venue_state>
+			<venue_zip>03907</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1599664
+		</event_url>
+	</event>
+	<event>
+		<event_id>1600684</event_id>
+		<artists>
+			<artist>
+				<artist_id>72823</artist_id>
+				<artist_name>The Summoned</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>3048</venue_id>
+			<venue_name>The Palladium</venue_name>
+			<venue_city>Worcester</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>01602</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1600684
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1600684
+		</event_url>
+	</event>
+	<event>
+		<event_id>1568668</event_id>
+		<artists>
+			<artist>
+				<artist_id>31106</artist_id>
+				<artist_name>Marc Cohn</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>206</venue_id>
+			<venue_name>Somerville Theatre</venue_name>
+			<venue_city>Somerville</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02143</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1568668
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1568668
+		</event_url>
+	</event>
+	<event>
+		<event_id>1583551</event_id>
+		<artists>
+			<artist>
+				<artist_id>78284</artist_id>
+				<artist_name>Cults</artist_name>
+			</artist>
+			<artist>
+				<artist_id>75751</artist_id>
+				<artist_name>Delicate Steve</artist_name>
+			</artist>
+			<artist>
+				<artist_id>91159</artist_id>
+				<artist_name>Dirty Fences</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>7420</venue_id>
+			<venue_name>Paradise Rock Club</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02215</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1583551
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1583551
+		</event_url>
+	</event>
+	<event>
+		<event_id>1600521</event_id>
+		<artists>
+			<artist>
+				<artist_id>44737</artist_id>
+				<artist_name>The Scourge of the Sea</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>70410</venue_id>
+			<venue_name>Church</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02215</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1600521
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1600521
+		</event_url>
+	</event>
+	<event>
+		<event_id>1595779</event_id>
+		<artists>
+			<artist>
+				<artist_id>5142</artist_id>
+				<artist_name>Ellis Ashbrook</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>38962</venue_id>
+			<venue_name>Middle East Upstairs</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02139</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1595779
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1595779
+		</event_url>
+	</event>
+	<event>
+		<event_id>1607074</event_id>
+		<artists>
+			<artist>
+				<artist_id>11287</artist_id>
+				<artist_name>John Medeski</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>125553</venue_id>
+			<venue_name>The Lilypad</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02139</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1607074
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1607074
+		</event_url>
+	</event>
+	<event>
+		<event_id>1563955</event_id>
+		<artists>
+			<artist>
+				<artist_id>57072</artist_id>
+				<artist_name>Gilberto Santa Rosa</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>80649</venue_id>
+			<venue_name>Showcase Live</venue_name>
+			<venue_city>Foxboro</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02035</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1563955
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1563955
+		</event_url>
+	</event>
+	<event>
+		<event_id>1608815</event_id>
+		<artists>
+			<artist>
+				<artist_id>77474</artist_id>
+				<artist_name>Chris Pahud</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>59691</venue_id>
+			<venue_name>Homegrown Coffeehouse</venue_name>
+			<venue_city>Needham</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02492</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1608815
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1608815
+		</event_url>
+	</event>
+	<event>
+		<event_id>1527532</event_id>
+		<artists>
+			<artist>
+				<artist_id>26065</artist_id>
+				<artist_name>Lori McKenna</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>117154</venue_id>
+			<venue_name>The River Club Music Hall</venue_name>
+			<venue_city>Scituate</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02066</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1527532
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1527532
+		</event_url>
+	</event>
+	<event>
+		<event_id>1606276</event_id>
+		<artists>
+			<artist>
+				<artist_id>75176</artist_id>
+				<artist_name>Ground Zero House Band</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>82316</venue_id>
+			<venue_name>Ground Zero</venue_name>
+			<venue_city>Suncook</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03275</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1606276
+		</event_url>
+	</event>
+	<event>
+		<event_id>1517403</event_id>
+		<artists>
+			<artist>
+				<artist_id>26178</artist_id>
+				<artist_name>Ellis Paul</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>29889</venue_id>
+			<venue_name>Common Fence Music</venue_name>
+			<venue_city>Portsmouth</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02871</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1517403
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1517403
+		</event_url>
+	</event>
+	<event>
+		<event_id>1562082</event_id>
+		<artists>
+			<artist>
+				<artist_id>25315</artist_id>
+				<artist_name>Mission of Burma</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>116755</venue_id>
+			<venue_name>Brighton Music Hall</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02134</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1562082
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1562082
+		</event_url>
+	</event>
+	<event>
+		<event_id>1578987</event_id>
+		<artists>
+			<artist>
+				<artist_id>44394</artist_id>
+				<artist_name>Pissed Jeans</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>2728</venue_id>
+			<venue_name>Great Scott</venue_name>
+			<venue_city>Boston</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02134</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1578987
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1578987
+		</event_url>
+	</event>
+	<event>
+		<event_id>1556240</event_id>
+		<artists>
+			<artist>
+				<artist_id>59635</artist_id>
+				<artist_name>The Van Burens</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>3571</venue_id>
+			<venue_name>Penuche's Ale House</venue_name>
+			<venue_city>Concord</venue_city>
+			<venue_state>NH</venue_state>
+			<venue_zip>03301</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1556240
+		</event_url>
+	</event>
+	<event>
+		<event_id>1584115</event_id>
+		<artists>
+			<artist>
+				<artist_id>26435</artist_id>
+				<artist_name>Rumors</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>115863</venue_id>
+			<venue_name>Newport Grand Cocktail Lounge</venue_name>
+			<venue_city>Newport</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02840</venue_zip>
+		</venue>
+		<ticket_url>http://www.jambase.com/Redirect.aspx?EventID=1584115
+		</ticket_url>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1584115
+		</event_url>
+	</event>
+	<event>
+		<event_id>1604445</event_id>
+		<artists>
+			<artist>
+				<artist_id>12875</artist_id>
+				<artist_name>Otis Grove</artist_name>
+			</artist>
+			<artist>
+				<artist_id>28794</artist_id>
+				<artist_name>Daddie long legs</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>113105</venue_id>
+			<venue_name>The Spot Underground</venue_name>
+			<venue_city>Providence</venue_city>
+			<venue_state>RI</venue_state>
+			<venue_zip>02903</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1604445
+		</event_url>
+	</event>
+	<event>
+		<event_id>1599487</event_id>
+		<artists>
+			<artist>
+				<artist_id>32033</artist_id>
+				<artist_name>Po Boyz</artist_name>
+			</artist>
+		</artists>
+		<event_date>1/21/2012</event_date>
+		<venue>
+			<venue_id>126151</venue_id>
+			<venue_name>Middle East Club - Corner</venue_name>
+			<venue_city>Cambridge</venue_city>
+			<venue_state>MA</venue_state>
+			<venue_zip>02139</venue_zip>
+		</venue>
+		<event_url>http://www.jambase.com/Shows/Event.aspx?eventID=1599487
+		</event_url>
+	</event>
+</JamBase_Data>
