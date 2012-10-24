@@ -18,13 +18,22 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
+import org.bson.BSONObject;
 
 import com.fcorp.funkrIntegrator.entities.Artist;
 import com.fcorp.funkrIntegrator.entities.Artists;
 import com.fcorp.funkrIntegrator.entities.Event;
 import com.fcorp.funkrIntegrator.entities.JamBase_Data;
 import com.fcorp.funkrIntegrator.entities.Zip;
+import com.mongodb.BasicDBObject;
+import com.mongodb.BasicDBObjectBuilder;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.Mongo;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;
@@ -36,7 +45,7 @@ public class FunkrIntegrator {
 	 * @param args
 	 */
 
-	protected static String GetShows(String zip, int radius, String startDate,
+	private String GetShows(String zip, int radius, String startDate,
 			String endDate) {
 		String response = null;
 		String reqUrl = "http://api.jambase.com/search";
@@ -64,7 +73,7 @@ public class FunkrIntegrator {
 
 	}
 
-	protected static JamBase_Data ParseResponse(String response) {
+	private JamBase_Data ParseResponse(String response) {
 		XStream stream = new XStream();
 		JamBase_Data jamdata = null;
 		if (response.contains("No shows found")) {
@@ -105,25 +114,22 @@ public class FunkrIntegrator {
 	}
 
 	
+	public FunkrIntegrator(){
+		
 
-	/*
-	 * protected static ArrayList<Zip> GetZips(){ ArrayList<Zip> getZips = new
-	 * ArrayList<Zip>();
-	 * 
-	 * CouchbaseClient cbClient = GetCouchbaseClient();
-	 * 
-	 * return getZips; }
-	 */
-
-	public static void main(String[] args) throws IOException,
-			URISyntaxException {
-		// TODO Auto-generated method stub
-
+		try{
+		Mongo mongodb = new Mongo("localhost", 27017);
+		DB db = mongodb.getDB("test");
+		DBCollection collection = db.getCollection("funkr");
+		
 		String resp = null;
-		String zip = "02215";
+		String zip = "02113";
 		int radius = 150;
-		String startDate = "2/22/2012";
-		String endDate = "3/14/2012";
+		//String startDate = "2/22/2012";
+		//String endDate = "3/14/2012";
+
+		String startDate = "10/20/2012";
+		String endDate = "10/23/2012";
 
 		// ** need to get all zips
 
@@ -132,16 +138,13 @@ public class FunkrIntegrator {
 		// get xml response from jambase
 		resp = GetShows(zip, radius, startDate, endDate);
 
-		// serililizae via XStream
+		// Serialize via XStream
 		JamBase_Data jmdata = ParseResponse(resp);
 
 		
 		//CouchbaseClient cbClient = GetCouchbaseClient();
 
 		if (jmdata != null) {
-
-			int EXP_TIME = 10;
-			Boolean do_delete = false;
 
 			// stream events from java obj to json
 			ArrayList<Event> evts = jmdata.getJambase_data();
@@ -154,32 +157,36 @@ public class FunkrIntegrator {
 			});
 			xstream.alias("Event", Event.class);
 
-			// Do an asynchronous set FOR ALL
-			// OperationFuture<Boolean> setOp = client.set(KEY, EXP_TIME,
-			// VALUE);
 			for (int i = 0; i < evts.size(); i++) {
 
-				// System.out.println(xstream.toXML(evts.get(i)));
-				//OperationFuture<Boolean> setOp = cbClient.set(evts.get(i)
-						//.getEvent_id(), 0, xstream.toXML(evts.get(i)));
-				System.out.println(xstream.toXML(evts.get(i)));
+				//System.out.println(xstream.toXML(evts.get(i)));
+				
+				BasicDBObject doc = new BasicDBObject();
+				doc.put("event_date", evts.get(i).getEvent_date());
+				doc.put("venue", evts.get(i).getVenue());
+				doc.put("ticket_url", evts.get(i).getTicket_url());
+				
+				collection.insert(doc);
+				
 			}
 
 			for (int i = 0; i < evts.size(); i++) {
-				// Do an asynchronous get FOR ALL
-//				GetFuture getOp = cbClient.asyncGet(evts.get(i).getEvent_id());
-
-				// Do an asynchronous delete
-	//			OperationFuture<Boolean> delOp = null;
-				if (do_delete) {
-		//			delOp = cbClient.delete(evts.get(i).getEvent_id());
+				
 				}
 			}
-
-			// Shutdown the client
-			//cbClient.shutdown(3, TimeUnit.SECONDS);
 		}
+		catch(Exception ex){
+			System.out.println(ex.getMessage());
+		}
+	}
+	
 
+
+	public static void main(String[] args) throws IOException,
+			URISyntaxException {
+
+		FunkrIntegrator integ = new FunkrIntegrator();
+		
 	}
 
 	/**
@@ -289,56 +296,5 @@ public class FunkrIntegrator {
 		while ((read = reader.read(buf)) >= 0) {
 			writer.write(buf, 0, read);
 		}
-	}
-
-	protected static void CouchDbScraps() {
-		// Now we want to see what happened with our data
-		// Check to see if our set succeeded
-		// try {
-		// if (setOp.get().booleanValue()) {
-		// System.out.println("Set Succeeded");
-		// } else {
-		// System.err.println("Set failed: "
-		// + setOp.getStatus().getMessage());
-		// }
-		// } catch (Exception e) {
-		// System.err.println("Exception while doing set: "
-		// + e.getMessage());
-		// }
-		// // Print the value from synchronous get
-		// if (getObject != null) {
-		// System.out.println("Synchronous Get Suceeded: "
-		// + (String) getObject);
-		// } else {
-		// System.err.println("Synchronous Get failed");
-		// }
-		// // Check to see if ayncGet succeeded
-		// try {
-		// if ((getObject = getOp.get()) != null) {
-		// System.out.println("Asynchronous Get Succeeded: "
-		// + getObject);
-		// } else {
-		// System.err.println("Asynchronous Get failed: "
-		// + getOp.getStatus().getMessage());
-		// }
-		// } catch (Exception e) {
-		// System.err.println("Exception while doing Aynchronous Get: "
-		// + e.getMessage());
-		// }
-		// // Check to see if our delete succeeded
-		// if (do_delete) {
-		// try {
-		// if (delOp.get().booleanValue()) {
-		// System.out.println("Delete Succeeded");
-		// } else {
-		// System.err.println("Delete failed: "
-		// + delOp.getStatus().getMessage());
-		// }
-		// } catch (Exception e) {
-		// System.err.println("Exception while doing delete: "
-		// + e.getMessage());
-		// }
-		// }
-
 	}
 }
