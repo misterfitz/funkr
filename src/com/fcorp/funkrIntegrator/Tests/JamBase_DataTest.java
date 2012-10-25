@@ -1,14 +1,9 @@
 package com.fcorp.funkrIntegrator.Tests;
 
 import java.io.Writer;
-import java.net.URI;
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
 import com.fcorp.funkrIntegrator.entities.Artist;
 import com.fcorp.funkrIntegrator.entities.Artists;
 import com.fcorp.funkrIntegrator.entities.Event;
@@ -168,6 +163,5 @@ public class JamBase_DataTest {
 		xStream.alias("artist", Artist.class);
 		System.out.println(xStream.toXML(jbdata));
 
-		XStream deserializeStream = new XStream(new DomDriver());
 	}
 }

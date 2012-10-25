@@ -1,6 +1,5 @@
 package com.fcorp.funkrIntegrator;
 
-import java.util.List;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,26 +10,12 @@ import java.io.Reader;
 import java.io.Writer;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
-import org.bson.BSONObject;
-
-import com.fcorp.funkrIntegrator.entities.Artist;
-import com.fcorp.funkrIntegrator.entities.Artists;
-import com.fcorp.funkrIntegrator.entities.Event;
-import com.fcorp.funkrIntegrator.entities.JamBase_Data;
-import com.fcorp.funkrIntegrator.entities.Zip;
+import com.fcorp.funkrIntegrator.entities.*;
 import com.mongodb.BasicDBObject;
-import com.mongodb.BasicDBObjectBuilder;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.Mongo;
@@ -41,10 +26,6 @@ import com.thoughtworks.xstream.io.json.JsonWriter;
 
 public class FunkrIntegrator {
 
-	/**
-	 * @param args
-	 */
-
 	private String GetShows(String zip, int radius, String startDate,
 			String endDate) {
 		String response = null;
@@ -54,23 +35,13 @@ public class FunkrIntegrator {
 				.concat("&apikey=fphg8ah7b6wgv685pyvvegb7")
 				.concat("&startDate=").concat(startDate).concat("&endDate=")
 				.concat(endDate);
-
-		// String response = null;
-		// String reqUrl = "http://api.jambase.com/search";
-		// String reqParams =
-		// "zip=02115&radius=75&apikey=fphg8ah7b6wgv685pyvvegb7&startDate=2/19/12&endDate=2/21/12";
-		// response = sendGetRequest(reqUrl, reqParams);
 		try {
 			response = sendGetRequest(reqUrl, reqParams);
-
-			System.out.println(response);
-
 		} catch (Exception e) {
-
+			System.out.println(e.getMessage());
+			System.out.println(e.getStackTrace());
 		}
-
 		return response;
-
 	}
 
 	private JamBase_Data ParseResponse(String response) {
@@ -81,15 +52,6 @@ public class FunkrIntegrator {
 		} else {
 
 			try {
-				/*
-				 * stream.alias("JamBase_Data", JamBase_Data.class);
-				 * stream.alias("event", Event.class);
-				 * stream.addImplicitCollection(Event.class, "event");
-				 * stream.alias("artists", Artists.class);
-				 * stream.alias("artist", Artist.class);
-				 * stream.addImplicitCollection(Artists.class, "artists");
-				 * stream.alias("venue", Venue.class);
-				 */
 
 				stream.alias("event", Event.class);
 				stream.addImplicitMap(JamBase_Data.class, "event", Event.class,
@@ -99,12 +61,8 @@ public class FunkrIntegrator {
 				stream.alias("artist", Artist.class);
 
 				jamdata = (JamBase_Data) stream.fromXML(response);
-				System.out.println(jamdata.toString());
 				return jamdata;
-
-			}
-
-			catch (Exception e) {
+			} catch (Exception e) {
 				System.out.println(e);
 				System.out.println(e.getStackTrace().toString());
 			}
@@ -113,80 +71,180 @@ public class FunkrIntegrator {
 		return jamdata;
 	}
 
-	
-	public FunkrIntegrator(){
-		
+	public BasicDBObject BuildDbDoc(Event evt) {
 
-		try{
-		Mongo mongodb = new Mongo("localhost", 27017);
-		DB db = mongodb.getDB("test");
-		DBCollection collection = db.getCollection("funkr");
-		
-		String resp = null;
-		String zip = "02113";
-		int radius = 150;
-		//String startDate = "2/22/2012";
-		//String endDate = "3/14/2012";
+		BasicDBObject eventDoc = new BasicDBObject();
 
-		String startDate = "10/20/2012";
-		String endDate = "10/23/2012";
+		eventDoc.put("event_id", evt.getEvent_id());
+		eventDoc.put("event_date", evt.getEvent_date());
+		eventDoc.put("ticket_url", evt.getTicket_url());
+		eventDoc.put("event_url", evt.getEvent_url());
 
-		// ** need to get all zips
-
-		// ArrayList<Zip> zips = GetZips();
-
-		// get xml response from jambase
-		resp = GetShows(zip, radius, startDate, endDate);
-
-		// Serialize via XStream
-		JamBase_Data jmdata = ParseResponse(resp);
-
-		
-		//CouchbaseClient cbClient = GetCouchbaseClient();
-
-		if (jmdata != null) {
-
-			// stream events from java obj to json
-			ArrayList<Event> evts = jmdata.getJambase_data();
-
-			// new streamer
-			XStream xstream = new XStream(new JsonHierarchicalStreamDriver() {
-				public HierarchicalStreamWriter createWriter(Writer writer) {
-					return new JsonWriter(writer, JsonWriter.DROP_ROOT_MODE);
-				}
-			});
-			xstream.alias("Event", Event.class);
-
-			for (int i = 0; i < evts.size(); i++) {
-
-				//System.out.println(xstream.toXML(evts.get(i)));
-				
-				BasicDBObject doc = new BasicDBObject();
-				doc.put("event_date", evts.get(i).getEvent_date());
-				doc.put("venue", evts.get(i).getVenue());
-				doc.put("ticket_url", evts.get(i).getTicket_url());
-				
-				collection.insert(doc);
-				
-			}
-
-			for (int i = 0; i < evts.size(); i++) {
-				
-				}
-			}
+		// build artists
+		BasicDBObject artistsDoc = new BasicDBObject();
+		ArrayList<Artist> artists = evt.getArtists();
+		for (int i = 0; i < artists.size(); i++) {
+			BasicDBObject artistDoc = new BasicDBObject();
+			artistDoc.put("artist_id", artists.get(i).getArtist_id());
+			artistDoc.put("artist_name", artists.get(i).getArtist_name());
+			artistsDoc.put("artist", artistDoc);
 		}
-		catch(Exception ex){
+
+		eventDoc.put("artists", artistsDoc);
+
+		// build venue
+		BasicDBObject venueDoc = new BasicDBObject();
+		venueDoc.put("id", evt.getVenue().getVenue_id());
+		venueDoc.put("name", evt.getVenue().getVenue_name());
+		venueDoc.put("city", evt.getVenue().getVenue_city());
+		venueDoc.put("state", evt.getVenue().getVenue_state());
+		venueDoc.put("zip", evt.getVenue().getVenue_zip());
+
+		eventDoc.put("venue", venueDoc);
+
+		return eventDoc;
+
+	}
+
+	protected ArrayList<Zip> ZipList() {
+
+		Zip z = null;
+		ArrayList<Zip> zips = new ArrayList<Zip>();
+
+		z = new Zip("87101", "Albuquerque");
+		zips.add(z);
+		z = new Zip("85726", "Tucson");
+		zips.add(z);
+		z = new Zip("73125", "Oklahoma City");
+		zips.add(z);
+		z = new Zip("97208", "Portland");
+		zips.add(z);
+		z = new Zip("89199", "Las Vegas");
+		zips.add(z);
+		z = new Zip("37230", "Nashville-Davidson6");
+		zips.add(z);
+		z = new Zip("20090", "Washington1");
+		zips.add(z);
+		z = new Zip("40231", "Louisville-Jefferson County5");
+		zips.add(z);
+		z = new Zip("80202", "Denver");
+		zips.add(z);
+		z = new Zip("02205", "Boston");
+		zips.add(z);
+		z = new Zip("98108", "Seattle");
+		zips.add(z);
+		z = new Zip("53203", "Milwaukee");
+		zips.add(z);
+		z = new Zip("79910", "El Paso");
+		zips.add(z);
+		z = new Zip("28228", "Charlotte");
+		zips.add(z);
+		z = new Zip("76161", "Fort Worth");
+		zips.add(z);
+		z = new Zip("21202", "Baltimore");
+		zips.add(z);
+		z = new Zip("38101", "Memphis");
+		zips.add(z);
+		z = new Zip("78710", "Austin");
+		zips.add(z);
+		z = new Zip("43216", "Columbus");
+		zips.add(z);
+		z = new Zip("94188", "San Francisco");
+		zips.add(z);
+		z = new Zip("32203", "Jacksonville");
+		zips.add(z);
+		z = new Zip("46206", "Indianapolis");
+		zips.add(z);
+		z = new Zip("48233", "Detroit");
+		zips.add(z);
+		z = new Zip("95101", "San Jose");
+		zips.add(z);
+		z = new Zip("75260", "Dallas");
+		zips.add(z);
+		z = new Zip("92199", "San Diego");
+		zips.add(z);
+		z = new Zip("78284", "San Antonio");
+		zips.add(z);
+		z = new Zip("85026", "Phoenix");
+		zips.add(z);
+		z = new Zip("19104", "Philadelphia");
+		zips.add(z);
+		z = new Zip("77201", "Houston");
+		zips.add(z);
+		z = new Zip("60607", "Chicago");
+		zips.add(z);
+		z = new Zip("90052", "Los Angeles");
+		zips.add(z);
+		z = new Zip("10199", "New York");
+		zips.add(z);
+
+		return zips;
+	}
+
+	public FunkrIntegrator() {
+
+		try {
+			Mongo mongodb = new Mongo("localhost", 27017);
+			DB db = mongodb.getDB("test");
+			DBCollection collection = db.getCollection("funkr");
+
+			String resp = null;
+			// String zip = "02113";
+			int radius = 150;
+			String startDate = "10/24/2012";
+			String endDate = "10/25/2012";
+
+			ArrayList<Zip> zips = ZipList();
+
+			for (int x = 0; x < zips.size(); x++) {
+				// get xml response from jambase
+				resp = GetShows(zips.get(x).getZip(), radius, startDate,
+						endDate);
+
+				// Serialize via XStream
+				JamBase_Data jmdata = ParseResponse(resp);
+
+				if (jmdata != null) {
+
+					// stream events from java obj to json
+					ArrayList<Event> evts = jmdata.getJambase_data();
+
+					// new streamer
+					XStream xstream = new XStream(
+							new JsonHierarchicalStreamDriver() {
+								public HierarchicalStreamWriter createWriter(
+										Writer writer) {
+									return new JsonWriter(writer,
+											JsonWriter.DROP_ROOT_MODE);
+								}
+							});
+					xstream.alias("Event", Event.class);
+
+					for (int i = 0; i < evts.size(); i++) {
+
+						// System.out.println(xstream.toXML(evts.get(i)));
+						// XStream jsonStream = new XStream(new
+						// JettisonMappedXmlDriver());
+						// jsonStream.setMode(XStream.NO_REFERENCES);
+						// jsonStream.alias("event", Event.class);
+						// System.out.println(jsonStream.toXML(evts.get(i)));
+
+						collection.insert(BuildDbDoc(evts.get(i)));
+
+					}
+
+				}
+			}
+		} catch (Exception ex) {
 			System.out.println(ex.getMessage());
 		}
 	}
-	
-
 
 	public static void main(String[] args) throws IOException,
 			URISyntaxException {
 
 		FunkrIntegrator integ = new FunkrIntegrator();
-		
+
 	}
 
 	/**

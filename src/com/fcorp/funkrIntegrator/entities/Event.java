@@ -2,10 +2,6 @@ package com.fcorp.funkrIntegrator.entities;
 
 import java.util.ArrayList;
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
-import com.thoughtworks.xstream.annotations.XStreamImplicitCollection;
-
-
 public class Event {
 	
 	private String event_id;
@@ -75,4 +71,5 @@ public class Event {
 	public void setEvent_url(String event_url) {
 		this.event_url = event_url;
 	}
+
 }
