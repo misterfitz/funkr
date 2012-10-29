@@ -190,8 +190,11 @@ public class FunkrIntegrator {
 		System.out.println("starting FunkrIntegrator");
 		
 		try {
-			Mongo mongodb = new Mongo("localhost", 27017);
-			DB db = mongodb.getDB("test");
+			// Mongo mongodb = new Mongo("localhost", 27017);
+			Mongo mongodb = new Mongo("alex.mongohq.com", 10011);
+			
+			DB db = mongodb.getDB("app8801249");
+			boolean auth = db.authenticate("heroku", "heroku".toCharArray());
 			
 			DBCollection collection = db.getCollection("funkr");
 
