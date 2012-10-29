@@ -15,6 +15,10 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -201,8 +205,11 @@ public class FunkrIntegrator {
 			String resp = null;
 			// String zip = "02113";
 			int radius = 150;
-			String startDate = "10/27/2012";
-			String endDate = "10/28/2012";
+			
+			DateTimeFormatter fmt = DateTimeFormat.forPattern("MM/dd/yyyy");
+
+			String endDate = DateTime.now().toString(fmt); // "10/27/2012";
+			String startDate = DateTime.now().plusDays(-1).toString(fmt);
 
 			ArrayList<Zip> zips = ZipList();
 
