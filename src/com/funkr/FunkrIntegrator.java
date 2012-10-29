@@ -15,9 +15,6 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 
-import org.apache.log4j.Logger;
-
-import com.funkr.entities.*;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -26,6 +23,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;
 import com.thoughtworks.xstream.io.json.JsonWriter;
+import com.funkr.entities.*;
 
 public class FunkrIntegrator {
 
@@ -57,8 +55,7 @@ public class FunkrIntegrator {
 			try {
 
 				stream.alias("event", Event.class);
-				stream.addImplicitMap(JamBase_Data.class, "event", Event.class,
-						"event");
+				stream.addImplicitCollection(JamBase_Data.class, "event", Event.class);
 				stream.alias("JamBase_Data", JamBase_Data.class);
 				stream.alias("artists", Artists.class);
 				stream.alias("artist", Artist.class);
@@ -195,6 +192,7 @@ public class FunkrIntegrator {
 		try {
 			Mongo mongodb = new Mongo("localhost", 27017);
 			DB db = mongodb.getDB("test");
+			
 			DBCollection collection = db.getCollection("funkr");
 
 			String resp = null;
@@ -261,6 +259,7 @@ public class FunkrIntegrator {
 		
 		FunkrIntegrator integ = new FunkrIntegrator();
 
+		
 	}
 
 	/**
