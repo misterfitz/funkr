@@ -73,8 +73,8 @@
   	</dependency>
   	<dependency>
   		<groupId>stax</groupId>
-  		<artifactId>stax</artifactId>
-  		<version>1.2.0_rc2-dev</version>
+  		<artifactId>stax-api</artifactId>
+  		<version>1.0</version>
   	</dependency>
   </dependencies>
   <dependencyManagement>
