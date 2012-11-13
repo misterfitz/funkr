@@ -15,6 +15,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 
+import org.hibernate.Session;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
@@ -33,6 +34,7 @@ public class FunkrIntegrator {
 
 	private String GetShows(String zip, int radius, String startDate,
 			String endDate) {
+		
 		String response = null;
 		String reqUrl = "http://api.jambase.com/search";
 		String reqParams = "zip=".concat(zip).concat("&radius=")
@@ -41,7 +43,7 @@ public class FunkrIntegrator {
 				.concat("&startDate=").concat(startDate).concat("&endDate=")
 				.concat(endDate);
 		try {
-			response = sendGetRequest(reqUrl, reqParams);
+			response = com.funkr.utils.WebUtils.sendGetRequest(reqUrl, reqParams);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			System.out.println(e.getStackTrace());
@@ -73,41 +75,6 @@ public class FunkrIntegrator {
 		}
 
 		return jamdata;
-	}
-
-	public BasicDBObject BuildDbDoc(Event evt) {
-
-		BasicDBObject eventDoc = new BasicDBObject();
-
-		eventDoc.put("event_id", evt.getEvent_id());
-		eventDoc.put("event_date", evt.getEvent_date());
-		eventDoc.put("ticket_url", evt.getTicket_url());
-		eventDoc.put("event_url", evt.getEvent_url());
-
-		// build artists
-		BasicDBObject artistsDoc = new BasicDBObject();
-		ArrayList<Artist> artists = evt.getArtists();
-		for (int i = 0; i < artists.size(); i++) {
-			BasicDBObject artistDoc = new BasicDBObject();
-			artistDoc.put("artist_id", artists.get(i).getArtist_id());
-			artistDoc.put("artist_name", artists.get(i).getArtist_name());
-			artistsDoc.put("artist", artistDoc);
-		}
-
-		eventDoc.put("artists", artistsDoc);
-
-		// build venue
-		BasicDBObject venueDoc = new BasicDBObject();
-		venueDoc.put("id", evt.getVenue().getVenue_id());
-		venueDoc.put("name", evt.getVenue().getVenue_name());
-		venueDoc.put("city", evt.getVenue().getVenue_city());
-		venueDoc.put("state", evt.getVenue().getVenue_state());
-		venueDoc.put("zip", evt.getVenue().getVenue_zip());
-
-		eventDoc.put("venue", venueDoc);
-
-		return eventDoc;
-
 	}
 
 	protected ArrayList<Zip> ZipList() {
@@ -229,32 +196,20 @@ public class FunkrIntegrator {
 					ArrayList<Event> evts = jmdata.getJambase_data();
 
 					System.out.println(String.format("found %s events for %s", evts.size(), zips.get(x)));
-					
-					// new streamer
-					XStream xstream = new XStream(
-							new JsonHierarchicalStreamDriver() {
-								public HierarchicalStreamWriter createWriter(
-										Writer writer) {
-									return new JsonWriter(writer,
-											JsonWriter.DROP_ROOT_MODE);
-								}
-							});
-					xstream.alias("Event", Event.class);
 
+					Session session = com.funkr.utils.HiberUtil.getSessionFactory().openSession();
+					session.beginTransaction();
+					session.getTransaction().commit();
+					
+					
 					for (int i = 0; i < evts.size(); i++) {
 
-						// System.out.println(xstream.toXML(evts.get(i)));
-						// XStream jsonStream = new XStream(new
-						// JettisonMappedXmlDriver());
-						// jsonStream.setMode(XStream.NO_REFERENCES);
-						// jsonStream.alias("event", Event.class);
-						// System.out.println(jsonStream.toXML(evts.get(i)));
-
-						collection.insert(BuildDbDoc(evts.get(i)));
-
+						session.save(evts.get(i));
+						
 						System.out.println(String.format("inserted event %s", evts.get(i).getEvent_id()));
 					}
 
+					session.close();
 				}
 			}
 		} catch (Exception ex) {
@@ -265,119 +220,8 @@ public class FunkrIntegrator {
 	public static void main(String[] args) throws IOException,
 			URISyntaxException {
 
-		
-		
 		FunkrIntegrator integ = new FunkrIntegrator();
-
 		
 	}
 
-	/**
-	 * Sends an HTTP GET request to a url
-	 * 
-	 * @param endpoint
-	 *            - The URL of the server. (Example:
-	 *            " http://www.yahoo.com/search")
-	 * @param requestParameters
-	 *            - all the request parameters (Example:
-	 *            "param1=val1&param2=val2"). Note: This method will add the
-	 *            question mark (?) to the request - DO NOT add it yourself
-	 * @return - The response from the end point
-	 */
-	public static String sendGetRequest(String endpoint,
-			String requestParameters) {
-		String result = null;
-		if (endpoint.startsWith("http://")) {
-			// Send a GET request to the servlet
-			try {
-				// Send data
-				String urlStr = endpoint;
-				if (requestParameters != null && requestParameters.length() > 0) {
-					urlStr += "?" + requestParameters;
-				}
-				URL url = new URL(urlStr);
-				URLConnection conn = url.openConnection();
-				// Get the response
-				BufferedReader rd = new BufferedReader(new InputStreamReader(
-						conn.getInputStream()));
-				StringBuffer sb = new StringBuffer();
-				String line;
-				while ((line = rd.readLine()) != null) {
-					sb.append(line);
-				}
-				rd.close();
-				result = sb.toString();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-		return result;
-	}
-
-	/**
-	 * Reads data from the data reader and posts it to a server via POST
-	 * request. data - The data you want to send endpoint - The server's address
-	 * output - writes the server's response to output
-	 * 
-	 * @throws Exception
-	 */
-	public static void postData(Reader data, URL endpoint, Writer output)
-			throws Exception {
-		HttpURLConnection urlc = null;
-		try {
-			urlc = (HttpURLConnection) endpoint.openConnection();
-			try {
-				urlc.setRequestMethod("POST");
-			} catch (ProtocolException e) {
-				throw new Exception(
-						"Shouldn't happen: HttpURLConnection doesn't support POST??",
-						e);
-			}
-			urlc.setDoOutput(true);
-			urlc.setDoInput(true);
-			urlc.setUseCaches(false);
-			urlc.setAllowUserInteraction(false);
-			urlc.setRequestProperty("Content-type", "text/xml; charset="
-					+ "UTF-8");
-			OutputStream out = urlc.getOutputStream();
-			try {
-				Writer writer = new OutputStreamWriter(out, "UTF-8");
-				pipe(data, writer);
-				writer.close();
-			} catch (IOException e) {
-				throw new Exception("IOException while posting data", e);
-			} finally {
-				if (out != null)
-					out.close();
-			}
-			InputStream in = urlc.getInputStream();
-			try {
-				Reader reader = new InputStreamReader(in);
-				pipe(reader, output);
-				reader.close();
-			} catch (IOException e) {
-				throw new Exception("IOException while reading response", e);
-			} finally {
-				if (in != null)
-					in.close();
-			}
-		} catch (IOException e) {
-			throw new Exception("Connection error (is server running at "
-					+ endpoint + " ?): " + e);
-		} finally {
-			if (urlc != null)
-				urlc.disconnect();
-		}
-	}
-
-	/**
-	 * Pipes everything from the reader to the writer via a buffer
-	 */
-	private static void pipe(Reader reader, Writer writer) throws IOException {
-		char[] buf = new char[1024];
-		int read = 0;
-		while ((read = reader.read(buf)) >= 0) {
-			writer.write(buf, 0, read);
-		}
-	}
 }

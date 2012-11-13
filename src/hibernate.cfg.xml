@@ -3,11 +3,18 @@
 		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-    <session-factory name="funkr">
-        <property name="hibernate.connection.driver_class">org.gjt.mm.mysql.Driver</property>
-        <property name="hibernate.connection.password">funkdafier</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost/funkr</property>
-        <property name="hibernate.connection.username">funkdafier</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
-    </session-factory>
+	<session-factory name="funkr">
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.password">funkr</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/funkr</property>
+		<property name="hibernate.connection.username">funkr</property>
+		<property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+		<!-- SQL dialect - generate SQL for a particular database -->
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<!-- Echo all executed SQL statements -->
+		<property name="show_sql">true</property>
+		<!-- Mapping resource configuration files -->
+		<mapping resource="com/funkr/entities/event.hbm.xml" />
+
+	</session-factory>
 </hibernate-configuration>
