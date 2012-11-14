@@ -1,6 +1,9 @@
 package com.funkr.entities;
 
 public class Venue {
+	
+	protected Venue() {}
+	
 	public Venue(String venue_id, String venue_name, String venue_city,
 			String venue_state, String venue_zip) {
 		super();

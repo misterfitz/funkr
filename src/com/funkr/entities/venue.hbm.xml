@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+	<class name="com.funkr.entities.Venue" table="venue" catalog="funkr">
+		<id name="Venue_id" type="string">
+			<column name="venue_id" />
+		</id>
+		<property name="Venue_name" type="string">
+			<column name="venue_name" length="64" not-null="false" unique="false" />
+		</property>
+		<property name="Venue_city" type="string">
+			<column name="venue_city" length="64" not-null="false" unique="false" />
+		</property>
+		<property name="Venue_state" type="string">
+			<column name="venue_state" length="64" not-null="false" unique="false" />
+		</property>
+		<property name="Venue_zip" type="string">
+			<column name="venue_zip" length="64" not-null="false" unique="false" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

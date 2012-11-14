@@ -3,17 +3,21 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
  <hibernate-mapping>
 	<class name="com.funkr.entities.Event" table="event" catalog="funkr">
-		<id name="eventid" type="java.lang.Integer">
+		<id name="Event_id" type="string">
 			<column name="event_id" />
-			<generator class="identity" />
 		</id>
-		<property name="event_url" type="string">
+		<one-to-many name="Artists" class="com.funkr.entities.Artists" 
+			cascade="save-update">
+			
+			</one-to-many>
+		<property name="Event_url" type="string">
 			<column name="event_url" length="64" not-null="false" unique="false" />
 		</property>
-		<property name="ticket_url" type="string">
+		<property name="Ticket_url" type="string">
 			<column name="ticket_url" length="64" not-null="false" unique="false" />
-		</property>
-		<one-to-one name="venue" class="com.funkr.entities.Venue"
-			cascade="save-update"></one-to-one>
+			</property>
+		<one-to-one name="Venue" class="com.funkr.entities.Venue"
+			cascade="save-update">
+			</one-to-one>
 	</class>
 </hibernate-mapping>

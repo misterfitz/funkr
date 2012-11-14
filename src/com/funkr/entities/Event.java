@@ -13,6 +13,8 @@ public class Event {
 	private String ticket_url;
 	private String event_url;
 	
+	protected Event() {}
+	
 	public Event(String event_id, ArrayList<Artist> artists, String event_date,
 			Venue venue, String ticket_url, String event_url) {
 		super();

@@ -199,21 +199,26 @@ public class FunkrIntegrator {
 
 					Session session = com.funkr.utils.HiberUtil.getSessionFactory().openSession();
 					session.beginTransaction();
-					session.getTransaction().commit();
+				
 					
 					
 					for (int i = 0; i < evts.size(); i++) {
 
-						session.save(evts.get(i));
+						session.merge(evts.get(i));
+						session.merge(evts.get(i).getVenue());
 						
 						System.out.println(String.format("inserted event %s", evts.get(i).getEvent_id()));
+						
+						
 					}
-
+					session.getTransaction().commit();
+					session.flush();
 					session.close();
 				}
 			}
 		} catch (Exception ex) {
 			System.out.println(ex.getMessage());
+			ex.printStackTrace(System.out);
 		}
 	}
 
