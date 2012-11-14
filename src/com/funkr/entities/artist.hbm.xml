@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.funkr.entities.Artist" table="artist">
+        <id name="artist_id" type="string"
+            column="artist_id">
+        </id>
+        <property name="artist_name" column="artist_name" />
+
+        <set name="events" table="event_artists"
+            inverse="true" lazy="true" fetch="select">
+            <key column="artist_id" />
+            <many-to-many column="event_id" class="com.funkr.entities.Event" />
+        </set>
+    </class>
+</hibernate-mapping>
