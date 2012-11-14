@@ -1,18 +1,7 @@
 package com.funkr;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Reader;
-import java.io.Writer;
-import java.net.HttpURLConnection;
-import java.net.ProtocolException;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.net.URLConnection;
 import java.util.ArrayList;
 
 import org.hibernate.Session;
@@ -20,14 +9,7 @@ import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.Mongo;
 import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
-import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;
-import com.thoughtworks.xstream.io.json.JsonWriter;
 import com.funkr.entities.*;
 
 public class FunkrIntegrator {
@@ -161,13 +143,6 @@ public class FunkrIntegrator {
 		System.out.println("starting FunkrIntegrator");
 		
 		try {
-			// Mongo mongodb = new Mongo("localhost", 27017);
-			Mongo mongodb = new Mongo("alex.mongohq.com", 10011);
-			
-			DB db = mongodb.getDB("app8801249");
-			boolean auth = db.authenticate("heroku", "heroku".toCharArray());
-			
-			DBCollection collection = db.getCollection("funkr");
 
 			String resp = null;
 			// String zip = "02113";
@@ -199,18 +174,20 @@ public class FunkrIntegrator {
 
 					Session session = com.funkr.utils.HiberUtil.getSessionFactory().openSession();
 					session.beginTransaction();
-				
-					
 					
 					for (int i = 0; i < evts.size(); i++) {
 
-						session.merge(evts.get(i));
-						session.merge(evts.get(i).getVenue());
+						Event e = evts.get(i);
+						
+						session.merge(e);
+						session.merge(e.getVenue());
+						for(Artist a : e.getArtists()){
+							session.merge(a);
+						}
 						
 						System.out.println(String.format("inserted event %s", evts.get(i).getEvent_id()));
-						
-						
 					}
+
 					session.getTransaction().commit();
 					session.flush();
 					session.close();

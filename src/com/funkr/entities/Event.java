@@ -1,11 +1,11 @@
 package com.funkr.entities;
 
-import java.util.ArrayList;
+import java.util.Set;
 
 public class Event {
 	
 	private String event_id;
-	private ArrayList<Artist> artists;
+	private Set<Artist> artists;
 	
 	//private Artists artists;
 	private String event_date;
@@ -15,7 +15,7 @@ public class Event {
 	
 	protected Event() {}
 	
-	public Event(String event_id, ArrayList<Artist> artists, String event_date,
+	public Event(String event_id, Set<Artist> artists, String event_date,
 			Venue venue, String ticket_url, String event_url) {
 		super();
 		this.event_id = event_id;
@@ -34,11 +34,11 @@ public class Event {
 		this.event_id = event_id;
 	}
 	
-	public ArrayList<Artist> getArtists() {
+	public Set<Artist> getArtists() {
 		return artists;
 	}
 	
-	public void setArtists(ArrayList<Artist> artists) {
+	public void setArtists(Set<Artist> artists) {
 		this.artists = artists;
 	}
 	

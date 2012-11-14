@@ -1,23 +1,34 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
- <hibernate-mapping>
+<hibernate-mapping>
 	<class name="com.funkr.entities.Event" table="event" catalog="funkr">
+		
 		<id name="Event_id" type="string">
 			<column name="event_id" />
 		</id>
-		<one-to-many name="Artists" class="com.funkr.entities.Artists" 
-			cascade="save-update">
-			
-			</one-to-many>
+		
+		<set name="Artists" table="event_artists" inverse="false"
+			lazy="true" fetch="select" cascade="all">
+			<key column="event_id" />
+			<many-to-many column="artist_id" class="com.funkr.entities.Artist" />
+		</set>
+		
+		<property name="event_date" type="string">
+			<column name="event_date" length="16" not-null="false" unique="false" />
+		</property>
+		
 		<property name="Event_url" type="string">
 			<column name="event_url" length="64" not-null="false" unique="false" />
 		</property>
+		
 		<property name="Ticket_url" type="string">
 			<column name="ticket_url" length="64" not-null="false" unique="false" />
-			</property>
+		</property>
+		
 		<one-to-one name="Venue" class="com.funkr.entities.Venue"
 			cascade="save-update">
-			</one-to-one>
+		</one-to-one>
+		
 	</class>
 </hibernate-mapping>

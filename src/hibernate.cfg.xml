@@ -17,5 +17,6 @@
 		<!-- Mapping resource configuration files -->
 		<mapping resource="com/funkr/entities/event.hbm.xml" />
 		<mapping resource="com/funkr/entities/venue.hbm.xml" />
+		<mapping resource="com/funkr/entities/artist.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>

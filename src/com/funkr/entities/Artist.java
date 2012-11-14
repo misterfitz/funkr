@@ -1,5 +1,7 @@
 package com.funkr.entities;
 
+import java.util.Set;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("artist")
@@ -10,6 +12,10 @@ public class Artist {
 	
 	@XStreamAlias("artist_name")
 	private String artist_name;
+	
+	private Set<Event> events;
+	
+	protected Artist() { }
 	
 	public Artist(String artist_id, String artist_name) {
 		super();
@@ -32,4 +38,12 @@ public class Artist {
 	public void setArtist_name(String artist_name) {
 		this.artist_name = artist_name;
 	}
+	
+	public void setEvents(Set<Event> events){
+		this.events = events;
+	}
+	public Set<Event> getEvents(){
+		return this.events;
+	}
+	
 }
