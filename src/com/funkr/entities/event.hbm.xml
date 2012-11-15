@@ -26,9 +26,8 @@
 			<column name="ticket_url" length="64" not-null="false" unique="false" />
 		</property>
 		
-		<one-to-one name="Venue" class="com.funkr.entities.Venue"
-			cascade="save-update">
-		</one-to-one>
-		
+		 <many-to-one name="venue" class="com.funkr.entities.Venue" fetch="select">
+            <column name="venue_id" not-null="true" />
+        </many-to-one>		
 	</class>
 </hibernate-mapping>

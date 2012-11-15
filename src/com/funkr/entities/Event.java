@@ -12,7 +12,7 @@ public class Event {
 	private Venue venue;
 	private String ticket_url;
 	private String event_url;
-	
+
 	protected Event() {}
 	
 	public Event(String event_id, Set<Artist> artists, String event_date,

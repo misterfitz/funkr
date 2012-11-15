@@ -178,9 +178,9 @@ public class FunkrIntegrator {
 					for (int i = 0; i < evts.size(); i++) {
 
 						Event e = evts.get(i);
-						
-						session.merge(e);
 						session.merge(e.getVenue());
+						session.merge(e);
+						
 						for(Artist a : e.getArtists()){
 							session.merge(a);
 						}

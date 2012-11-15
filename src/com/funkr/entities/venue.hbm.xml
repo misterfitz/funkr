@@ -18,6 +18,12 @@
 		<property name="Venue_zip" type="string">
 			<column name="venue_zip" length="64" not-null="false" unique="false" />
 		</property>
-		
+        <set name="events" table="event" 
+				inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="venue_id" not-null="false" />
+            </key>
+            <one-to-many class="com.funkr.entities.Event" />
+        </set>		
 	</class>
 </hibernate-mapping>
