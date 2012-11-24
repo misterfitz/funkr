@@ -97,12 +97,11 @@
 			<artifactId>hibernate-commons-annotations</artifactId>
 			<version>4.0.1.Final</version>
 		</dependency>
+
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>org.postgresqlDriver</artifactId>
-			<version>9.2</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/postgresql-9.2-1001.jdbc3.jar</systemPath>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.1-901-1.jdbc4</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
