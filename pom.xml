@@ -102,6 +102,7 @@
 			<artifactId>Driver</artifactId>
 			<version>9.2</version>
 			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/postgresql-9.2-1001.jdbc3.jar</systemPath>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
