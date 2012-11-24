@@ -97,6 +97,12 @@
 			<artifactId>hibernate-commons-annotations</artifactId>
 			<version>4.0.1.Final</version>
 		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>Driver</artifactId>
+			<version>9.2</version>
+			<scope>system</scope>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
