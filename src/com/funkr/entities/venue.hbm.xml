@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
  <hibernate-mapping>
-	<class name="com.funkr.entities.Venue" table="venue" catalog="funkr">
+	<class name="com.funkr.entities.Venue" table="venue" catalog="d6548it8no6sqm">
 		<id name="Venue_id" type="string">
 			<column name="venue_id" />
 		</id>
