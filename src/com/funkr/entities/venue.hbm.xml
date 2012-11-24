@@ -7,7 +7,7 @@
 			<column name="venue_id" />
 		</id>
 		<property name="Venue_name" type="string">
-			<column name="venue_name" length="64" not-null="false" unique="false" />
+			<column name="venue_name" length="128" not-null="false" unique="false" />
 		</property>
 		<property name="Venue_city" type="string">
 			<column name="venue_city" length="64" not-null="false" unique="false" />
