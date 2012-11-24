@@ -11,7 +11,6 @@
 		<!--  &ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory -->
 		<property name="hibernate.connection.username">slybsbrxcczudt</property>
 		<property name="hibernate.connection.password">eUxy6_nueIi7ouGimDNW_IoOhc</property>
-		<property name="hibernate.default_schema">funkr</property>		
 		<property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
 		<!-- SQL dialect - generate SQL for a particular database -->
 		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
