@@ -7,10 +7,16 @@
 		<!--  <property name="hibernate.hbm2ddl.auto">create-drop</property> -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-		<property name="hibernate.connection.url">jdbc:postgresql://ec2-54-243-249-191.compute-1.amazonaws.com:5432/d6548it8no6sqm</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/funkr</property>
 		<!--  &ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory -->
+<<<<<<< HEAD
 		<property name="hibernate.connection.username">slybsbrxcczudt</property>
 		<property name="hibernate.connection.password">eUxy6_nueIi7ouGimDNW_IoOhc</property>
+=======
+		<property name="hibernate.connection.username">funkr</property>
+		<property name="hibernate.connection.password">funkr</property>
+		<property name="hibernate.default_schema">funkr</property>		
+>>>>>>> 59a6d8426c9a683f2301fb3f631b5b5c8c7c1f10
 		<property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
 		<!-- SQL dialect - generate SQL for a particular database -->
 		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>

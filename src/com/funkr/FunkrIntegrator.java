@@ -150,8 +150,8 @@ public class FunkrIntegrator {
 			
 			DateTimeFormatter fmt = DateTimeFormat.forPattern("MM/dd/yyyy");
 
-			String endDate = DateTime.now().toString(fmt); // "10/27/2012";
-			String startDate = DateTime.now().plusDays(-1).toString(fmt);
+			String endDate = DateTime.now().plusDays(90).toString(fmt); // "10/27/2012";
+			String startDate = DateTime.now().plusDays(-90).toString(fmt);
 
 			ArrayList<Zip> zips = ZipList();
 
